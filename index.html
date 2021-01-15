@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="JWD Generation Project">
+    <meta name="keywords" content="HTML, CSS, JavaScript, bootstrap">
+    <meta name="author" content="Samai | Eyasu | Biruk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="CSS\main.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title> Task Manager </title>
+</head>
+
+<body>
+    <header class="navbar navbar-dark bg-dark">
+        <h1 class="headerText1"> GoTo Task Manager </h1>
+
+    </header>
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col wf"> 
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container-fluid">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </nav>
+<main>
+    <section>
+    <div class="container">
+        <div class="row">
+            <div class="col wf"> 
+            <form>
+                <div class="form-group">
+                  <label for="taskName">Task Name </label>
+                  <input type="taskName" class="form-control btn-outline-secondary" id="taskName" aria-describedby="taskName" placeholder="Enter task name">
+                  <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                </div>
+             <div class="form-group">
+                  <label for="taskDescription">Task Description</label>
+                  <input type="taskDescription" class="form-control btn-outline-secondary" id="taskDescription" aria-describedby="taskDescription" placeholder="Enter task description">
+                  <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                </div>
+                <div class="form-group">
+                    <label for="assignedTo">Assigned to</label>
+                    <input type="assignedTo" class="form-control btn-outline-secondary" id="assignedTo" aria-describedby="assignedTo" placeholder="Enter task holder name">
+                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                  </div>
+
+                 <div> <label for="dueDate">Due date</label> </div>
+                  <div class="input-group date" data-provide="datepicker">
+                    <input type="text" class="form-control btn-outline-secondary" value="01-15-2021">
+                    <div class="input-group-addon">
+                    </div>
+                </div>
+                <br>
+                <div><label for="taskStatus">Task Status</label></div>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">Task Status </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">To Do</a>
+                      <a class="dropdown-item" href="#">IN PROGRESS</a>
+                      <a class="dropdown-item" href="#">Review</a>
+                      <a class="dropdown-item" href="#">DONE</a>
+                    </div>
+                  </div>
+                  <br>
+                <div>
+                <button type="submit" class="btn-primary btn-lg btn-block">Submit</button>
+                </div>
+                </form>
+              </form>
+            </div>
+
+            <div class="col wf"> 
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <a class="btn btn-outline-danger" href="#" role="button">Task 1</a>
+                    <a class="btn btn-outline-danger" href="#" role="button">Task 2</a>
+                    <a class="btn btn-outline-danger" href="#" role="button">Task 3</a>
+                    <a class="btn btn-outline-danger" href="#" role="button">Task 4</a>
+                    <a class="btn btn-outline-danger" href="#" role="button">Task 15</a>
+                  </div>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" id="item1">
+                    <img class="d-block w-1" src="Resources\Card 1.png">
+                    <h5 class="card-title">Schedule airport pickup</h5>
+                    <p class="card-text">Task Description: Make sure Susan is picked up at 12:30 when she arrives at airport</p>
+                    <p class="card-text">Assigned to: John</p>
+                    <p class="card-text">Due date: 01/20/2021</p>
+                    <p class="card-text">Task Status: To Do</p>
+
+                    <a href="#" class="btn btn-primary">Change Status</a>      
+                    <a href="#" class="btn btn-danger">Delete Task</a>                
+                  </div>
+                  <div class="carousel-item item2">
+                    <img class="d-block w-1" src="Resources\Card 2.png">
+                    <h5 class="card-title">Review contract</h5>
+                    <p class="card-text">Review merger contract with TaskManagement Company manager</p>
+                    <p class="card-text">Assigned to: Susan</p>
+                    <p class="card-text">Due date: 01/21/2021</p>
+                    <p class="card-text">Task Status: To Do</p>
+
+                    <a href="#" class="btn btn-primary">Change Status</a>      
+                    <a href="#" class="btn btn-danger">Delete Task</a>                    
+                  </div>
+                  <div class="carousel-item item3">
+                    <img class="d-block w-1" src="Resources\Card 3.png">
+                    <h5 class="card-title">New employee interviews</h5>
+                    <p class="card-text">Start new employee interviews for open Junior Developer Position</p>
+                    <p class="card-text">Assigned to: Mary</p>
+                    <p class="card-text">Due date: 01/22/2021</p>
+                    <p class="card-text">Task Status: In progress</p>
+
+                    <a href="#" class="btn btn-primary">Change Status</a>      
+                    <a href="#" class="btn btn-danger">Delete Task</a>                    
+                  </div>       
+                  <div class="carousel-item item4">
+                    <img class="d-block w-1" src="Resources\Card 4.png">
+                    <h5 class="card-title">Create new hiring contract</h5>
+                    <p class="card-text">Create contract for new Junior Developer employees before start of training</p>
+                    <p class="card-text">Assigned to: Judith</p>
+                    <p class="card-text">Due date: 01/23/2021</p>
+                    <p class="card-text">Task Status: Review</p>
+
+                    <a href="#" class="btn btn-primary">Change Status</a>      
+                    <a href="#" class="btn btn-danger">Delete Task</a>                    
+                  </div>
+                  <div class="carousel-item item5">
+                    <img class="d-block w-1" src="Resources\Card 5.png">
+                    <h5 class="card-title">Schedule airport drop-off</h5>
+                    <p class="card-text">Task Description: Make sure Susan is dropped-off at 10: a.m at airport</p>
+                    <p class="card-text">Assigned to: John</p>
+                    <p class="card-text">Due date: 01/24/2021</p>
+                    <p class="card-text">Task Status: To Do</p>
+
+                    <a href="#" class="btn btn-primary">Change Status</a>      
+                    <a href="#" class="btn btn-danger">Delete Task</a>                    
+                  </div>       
+                </div>
+                </div>
+            </div>
+          </div>
+</section>
+</main>
+<footer>
+
+    <div class="container">
+        <div class="row">
+            <div class="col wf"> 
+            <div class="card text-center">
+                <div class="card-header">
+                  Resources
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Learn more</h5>
+                  <p class="card-text">To let task management methods, follow this link to watch The 3 Best Methods for Task Management</p>
+                  <a href="https://www.youtube.com/watch?v=4kz1-X9Sn08" class="btn btn-success">Task management methods</a>
+                </div>
+
+              </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
