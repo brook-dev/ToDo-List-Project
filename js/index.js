@@ -14,27 +14,27 @@ taskName.addEventListener('taskName', (e) => {
     }
 })
 
-taskDescription.addEventListener('taskDescription', (e) => {
-    e.preventDefault();
+taskDescription.addEventListener('taskDescription', (x) => {
+    x.preventDefault();
     if (!textField.value) {
         console.log('Task Description:   ' + taskDescription);
     }
 })
-assignedTo.addEventListener('assignedTo', (e) => {
-    e.preventDefault();
+assignedTo.addEventListener('assignedTo', (y) => {
+    y.preventDefault();
     if (!textField.value) {
         console.log('Assigned To:   ' + assignedTo);
     }
 })
 
-dueDateId.addEventListener('dueDateId', (e) => {
-    e.preventDefault();
+dueDateId.addEventListener('dueDateId', (z) => {
+    z.preventDefault();
     if (!textField.value) {
         console.log('Due Date:   ' + dueDateId);
     }
 })
-taskStatusId.addEventListener('taskStatusId', (e) => {
-    e.preventDefault();
+taskStatusId.addEventListener('taskStatusId', (f) => {
+    f.preventDefault();
     if (!textField.value) {
         console.log('Task Status:   ' + taskStatusId);
     }
