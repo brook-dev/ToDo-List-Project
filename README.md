@@ -4,6 +4,7 @@ This is the final project done by Eyasu, Sama, Bisenebit and Biruk Using HTML, C
 Comments on the wireframe (To be implemented on the project):
 
 Drop-Down options:
+
 TODO, 
 IN PROGRESS, 
 REVIEW, 

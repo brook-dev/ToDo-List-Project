@@ -13,7 +13,7 @@
 
 <body>
     <header class="navbar navbar-dark bg-dark">
-        <h1 class="headerText1"> GoTo Task Manager </h1>
+        <h1 class="headerText1"> Go-To Task Manager </h1>
 
     </header>
     <nav>
@@ -37,31 +37,31 @@
     <div class="container">
         <div class="row">
             <div class="col wf"> 
-            <form>
+            <form id=>
                 <div class="form-group">
                   <label for="taskName">Task Name </label>
-                  <input type="taskName" class="form-control btn-outline-secondary" id="taskName" aria-describedby="taskName" placeholder="Enter task name">
+                  <input type="taskName" class="form-control btn-outline-secondary" id="taskName" aria-describedby="taskName" placeholder="Enter task name" required>
                   <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                 </div>
              <div class="form-group">
                   <label for="taskDescription">Task Description</label>
-                  <input type="taskDescription" class="form-control btn-outline-secondary" id="taskDescription" aria-describedby="taskDescription" placeholder="Enter task description">
+                  <input type="taskDescription" class="form-control btn-outline-secondary" id="taskDescription" aria-describedby="taskDescription" placeholder="Enter task description" required>
                   <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                 </div>
                 <div class="form-group">
                     <label for="assignedTo">Assigned to</label>
-                    <input type="assignedTo" class="form-control btn-outline-secondary" id="assignedTo" aria-describedby="assignedTo" placeholder="Enter task holder name">
+                    <input type="assignedTo" class="form-control btn-outline-secondary" id="assignedTo" aria-describedby="assignedTo" placeholder="Enter task holder name" required>
                     <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                   </div>
 
-                 <div> <label for="dueDate">Due date</label> </div>
+                 <div> <label for="dueDate" id="dueDateId">Due date</label> </div>
                   <div class="input-group date" data-provide="datepicker">
-                    <input type="text" class="form-control btn-outline-secondary" value="01-15-2021">
+                    <input type="text" class="form-control btn-outline-secondary" value="01-15-2021" required>
                     <div class="input-group-addon">
                     </div>
                 </div>
                 <br>
-                <div><label for="taskStatus">Task Status</label></div>
+                <div><label for="taskStatus" id="taskStatusId">Task Status</label></div>
                 <div class="dropdown">
                     <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">Task Status </button>
                     <div class="dropdown-menu">
@@ -73,7 +73,7 @@
                   </div>
                   <br>
                 <div>
-                <button type="submit" class="btn-primary btn-lg btn-block">Submit</button>
+                <button type="submit" class="btn-primary btn-lg btn-block" id="submitButton">Submit</button>
                 </div>
                 </form>
               </form>
@@ -170,7 +170,8 @@
         </div>
     </div>
 </footer>
-    <script src="main.js"></script>
+    <script src="js/taskManager.js"></script>
+    <script src="js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
