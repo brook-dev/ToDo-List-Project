@@ -13,4 +13,6 @@ function listener(){
 
     const taskStatus = document.getElementById("taskStatus").value;
     console.log("Task Status:  "+taskStatus);
+
 }
+

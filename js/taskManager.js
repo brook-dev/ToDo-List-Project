@@ -1,8 +1,8 @@
-// class taskManager {
-//     constructor() {
-//         this.task = [];
-//     }
-// }
+class taskManager {
+    constructor() {
+        this.task = [];
+    }
+}
 
-// let tasks = new taskManager();
-// console.log(tasks);
+let tasks = new taskManager();
+console.log(tasks);
