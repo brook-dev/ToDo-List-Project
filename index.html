@@ -37,7 +37,7 @@
     <div class="container">
         <div class="row">
             <div class="col wf"> 
-            <form id=>
+            <form>
                 <div class="form-group">
                   <label for="taskName">Task Name </label>
                   <input type="taskName" class="form-control btn-outline-secondary" id="taskName" aria-describedby="taskName" placeholder="Enter task name" required>
@@ -52,28 +52,23 @@
                     <label for="assignedTo">Assigned to</label>
                     <input type="assignedTo" class="form-control btn-outline-secondary" id="assignedTo" aria-describedby="assignedTo" placeholder="Enter task holder name" required>
                     <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                  </div>
+                </div>
 
-                 <div> <label for="dueDate" id="dueDateId">Due date</label> </div>
-                  <div class="input-group date" data-provide="datepicker">
-                    <input type="text" class="form-control btn-outline-secondary" value="01-15-2021" required>
-                    <div class="input-group-addon">
-                    </div>
+                <div class="col"> </div>
+                    <label for="dueDate">Due date</label>
+                <div class="input-group date"  data-provide="datepicker" aria-required="true">
+                    <input type="date" class="form-control btn-outline-secondary" id="dueDateId" required>
                 </div>
                 <br>
-                <div><label for="taskStatus" id="taskStatusId">Task Status</label></div>
-                <div class="dropdown">
-                    <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">Task Status </button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">To Do</a>
-                      <a class="dropdown-item" href="#">IN PROGRESS</a>
-                      <a class="dropdown-item" href="#">Review</a>
-                      <a class="dropdown-item" href="#">DONE</a>
-                    </div>
+
+                  <div class="form-group">
+                    <label for="taskStatus">Task Status</label>
+                    <input type="taskStatus" class="form-control btn-outline-secondary" id="taskStatus" aria-describedby="taskStatus" placeholder="To Do / In Progress / Review / Done" required>
                   </div>
+     
                   <br>
                 <div>
-                <button type="submit" class="btn-primary btn-lg btn-block" id="submitButton">Submit</button>
+                <button type="submit" class="btn-primary btn-lg btn-block" id="submitButton" onclick="listener()">Submit</button>
                 </div>
                 </form>
               </form>
