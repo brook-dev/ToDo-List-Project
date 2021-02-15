@@ -1,4 +1,5 @@
 const taskManager = new TaskManager()
+// load the tasks with taskManager.load() and render them with taskManager.render()
 taskManager.load()
 taskManager.render()
 const validFormFieldInput = () => {
@@ -12,22 +13,22 @@ const validFormFieldInput = () => {
     const dueDate = newDueDateInput.value;
     if (name===""){
         $('#name-alert').show()
-        setTimeout(()=>{$('#name-alert').hide()},2000)
+        setTimeout(()=>{$('#name-alert').hide()},3000)
         return false;
     }
     if (description==="") {
         $('#descrip-alert').show()
-        setTimeout(()=>{$('#descrip-alert').hide()},2000)
+        setTimeout(()=>{$('#descrip-alert').hide()},3000)
         return false;
     }
     if (assignedTo===""){
         $('#assigned-alert').show()
-        setTimeout(()=>{$('#assigned-alert').hide()},2000)
+        setTimeout(()=>{$('#assigned-alert').hide()},3000)
         return false;
     }
     if (dueDate === ""){
         $('#due-alert').show()
-        setTimeout(()=>{$('#due-alert').hide()},2000)
+        setTimeout(()=>{$('#due-alert').hide()},3000)
         return false;
     }
     taskManager.addTask(name,description,assignedTo,dueDate)
@@ -38,6 +39,7 @@ const validFormFieldInput = () => {
     newAssignedToInput.value = ""
     newDueDateInput.value = ""
 }
+//In js/index.js, at the bottom of the file, use querySelector to select the Task List and store it in a variable.
 const tasksList = document.querySelector('#tasks');
 tasksList.addEventListener('click',(event) => {
         const parentTask = event.target.parentElement.parentElement.parentElement
@@ -56,17 +58,3 @@ tasksList.addEventListener('click',(event) => {
         return false;
     }
 })
-//     //  In index.js, add an event listener to the New Task form, listening to the submit event. If there is already an event listener used for validation, use that one.
-// const sub = document.getElementById('submitButton');
-
-//  sub.addEventListener('click', listener);
-
- // Create a taskHtml variable with the result of calling the createTaskHtml function, making sure to pass a value for each parameter.
-// const taskHtml = createTaskHtml('finalProject', 'the should meet to review on task 5,6 and 7', 'Group', '2/9/2021', 'review');
-
-//TaskManager.addTask(taskName, taskDescription, assignedTo, dueDateId, taskStatus);
-//TaskManager.render(); // ****** I didnt see the tasks are added on the lists @ this stage!
-//  console.log(tasksList);
-
-// console.log(createHtml);
-// task 7:step 2====> Add an Event Listener to the Task List, listening for the 'click' event.

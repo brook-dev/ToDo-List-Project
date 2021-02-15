@@ -1,8 +1,10 @@
               
 // In js/taskManager.js, above the TaskManager class definition, create a new function, createTaskHtml. The function should accept the following parameters:
 const createTaskHtml = (name,description,assignedTo,dueDate,status,id) => { 
+  // using conditional(ternary operator for Mark As done status)
   const display = status == "TODO" ? "" : "d-none";   
-  const color = status == "TODO" ? "btn-outline-warning" : "btn-success"
+  // using conditional(ternary) operator for status styling
+  const color = status == "TODO" ? "btn-outline-primary" : "btn-success"
   const html = `<li class="list-group-item">
                 <div class="task" data-task-id=${id}>
                   <div class="task-top">
@@ -27,7 +29,7 @@ const createTaskHtml = (name,description,assignedTo,dueDate,status,id) => {
                       <span class="${display} btn btn-outline-success done-button">Mark as done</span>
                     </div>
                     <div>
-                      <span class="btn btn-outline-danger delete-button">Delete</span>
+                      <span class="btn btn-outline-danger delete-button">DeleteTask</span>
                     </div>
                   </div>
                 </div>
@@ -85,6 +87,7 @@ const createTaskHtml = (name,description,assignedTo,dueDate,status,id) => {
               this._currentId = +localStorage.getItem('currentID')
           }
       }
+    // create a deleteTask method on the TaskManager class. It should take one parameter, taskId, the id of the task we want deleted.
       deleteTask (taskId) {
           this.tasks.splice(taskId,1)
           this._currentId--

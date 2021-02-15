@@ -7,14 +7,12 @@
 nav {
     margin-left: 500px;
     margin-bottom: 20px;
+    /* background-color: lightblue; */
 
 }
-.form-task {
-    background-color: lightblue;
+.main {
+    background-color:lightblue;
 }
-/* .task {
-    background-image: url('../Resources/Images/Card4.png');
-} */
 .task-top {
     display: flex;
     flex-direction: row;
