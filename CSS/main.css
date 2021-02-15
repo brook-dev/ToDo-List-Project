@@ -1,7 +1,7 @@
 
 .headerText1 {
-    color: blue;
-    margin-left: 450px;
+     text-align: center;
+    margin-left: 700px; 
 
 }
 nav {
@@ -9,6 +9,30 @@ nav {
     margin-bottom: 20px;
 
 }
+.form-task {
+    background-color: lightblue;
+}
+/* .task {
+    background-image: url('../Resources/Images/Card4.png');
+} */
+.task-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+  }
+  
+  .task-bottom {
+    display: flex;
+    flex-direction: row;
+    align-self: right;
+    justify-content: space-between;
+  }
+/* .tasks-list {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+} */
 footer {
     margin-top: 100px;
 }
